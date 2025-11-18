@@ -30,6 +30,12 @@ jobs:
         with:
           version: nightly
       
+      - name: Install dependencies
+        run: forge install
+      
+      - name: Build
+        run: forge build
+      
       - name: Run tests
         run: forge test -vvv
       
@@ -48,6 +54,9 @@ jobs:
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
+      
+      - name: Install dependencies
+        run: forge install
       
       - name: Check formatting
         run: forge fmt --check

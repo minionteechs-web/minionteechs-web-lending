@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { ReactNode, InputHTMLAttributes, ButtonHTMLAttributes } from 'react'
 
 interface WalletConnectButtonProps {
   account: string | null
@@ -50,7 +50,7 @@ export function Card({ children, className = '' }: CardProps) {
   )
 }
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string
 }
 
@@ -66,7 +66,7 @@ export function Input({ label, className = '', ...props }: InputProps) {
   )
 }
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'danger'
   loading?: boolean
 }
