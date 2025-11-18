@@ -1,0 +1,35 @@
+{
+  "name": "minionteechs-web-lending",
+  "version": "1.0.0",
+  "description": "A decentralized lending protocol with frontend and smart contracts",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "forge test",
+    "test:verbose": "forge test -vvv",
+    "gas-report": "forge test --gas-report",
+    "build": "forge build && cd frontend && npm run build",
+    "dev:backend": "forge build && forge test",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "npm run dev:backend",
+    "fmt": "forge fmt",
+    "fmt:check": "forge fmt --check",
+    "frontend:install": "cd frontend && npm install",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:preview": "cd frontend && npm run preview"
+  },
+  "keywords": [
+    "ethereum",
+    "defi",
+    "lending",
+    "smart-contracts",
+    "solidity",
+    "react",
+    "web3"
+  ],
+  "author": "MinionTechs",
+  "license": "MIT",
+  "devDependencies": {
+    "forge": "^0.8.0"
+  }
+}

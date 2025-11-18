@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+out/
+cache/
+build/
+.env
+.env.local
+dist/
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.log
+coverage/
+lcov.info
